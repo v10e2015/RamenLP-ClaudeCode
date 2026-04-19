@@ -390,12 +390,110 @@ body {
   padding-top: 16px;
 }
 
+/* ─── Flow Section ─── */
+
+.flow-section {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.flow-inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.flow-heading {
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  margin-bottom: 56px;
+  position: relative;
+  display: inline-block;
+}
+
+.flow-heading::after {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 3px;
+  background-color: #e53935;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+.flow-steps {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0;
+}
+
+.flow-step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 0 16px;
+}
+
+.flow-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #c9a84c;
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.flow-step-title {
+  font-size: clamp(1rem, 2.2vw, 1.15rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.flow-step-body {
+  font-size: clamp(0.8rem, 1.8vw, 0.9rem);
+  color: #555555;
+  line-height: 1.8;
+}
+
+.flow-arrow {
+  font-size: 2.4rem;
+  color: #c9a84c;
+  line-height: 1;
+  padding-top: 20px;
+  flex-shrink: 0;
+}
+
 @media (max-width: 640px) {
   .review-cards {
     grid-template-columns: 1fr;
   }
 
   .review-section {
+    padding: 60px 20px;
+  }
+
+  .flow-steps {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .flow-arrow {
+    transform: rotate(90deg);
+    padding-top: 0;
+  }
+
+  .flow-section {
     padding: 60px 20px;
   }
 }
