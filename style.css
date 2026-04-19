@@ -78,6 +78,68 @@ body {
   transform: translateY(0);
 }
 
+/* ─── Empathy Section ─── */
+
+.empathy-section {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.empathy-inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.empathy-heading {
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  margin-bottom: 48px;
+  position: relative;
+  display: inline-block;
+}
+
+.empathy-heading::after {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 3px;
+  background-color: #e53935;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+.empathy-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.empathy-card {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-top: 4px solid #e53935;
+}
+
+.empathy-icon {
+  font-size: 2.8rem;
+  line-height: 1;
+}
+
+.empathy-text {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  font-weight: 700;
+  line-height: 1.7;
+  color: #1a1a1a;
+}
+
 /* ─── Responsive ─── */
 
 @media (max-width: 480px) {
@@ -88,5 +150,15 @@ body {
   .hero-cta {
     display: block;
     padding: 18px 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .empathy-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .empathy-section {
+    padding: 60px 20px;
   }
 }
