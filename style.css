@@ -594,3 +594,100 @@ body {
     padding: 60px 20px;
   }
 }
+
+/* ─── Final CTA Section ─── */
+
+.final-cta-section {
+  background-color: #1a1a1a;
+  background-image:
+    radial-gradient(ellipse at 50% 0%, rgba(201, 168, 76, 0.18) 0%, transparent 60%);
+  color: #ffffff;
+  padding: 100px 24px;
+  text-align: center;
+}
+
+.final-cta-inner {
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.final-cta-heading {
+  font-size: clamp(1.6rem, 5vw, 2.6rem);
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  line-height: 1.3;
+}
+
+.final-cta-sub {
+  font-size: clamp(0.9rem, 2.2vw, 1.05rem);
+  color: #cccccc;
+  letter-spacing: 0.06em;
+}
+
+.final-cta-btn {
+  display: inline-block;
+  background-color: #e53935;
+  color: #ffffff;
+  font-size: clamp(1.1rem, 3vw, 1.4rem);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  padding: 22px 72px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s, transform 0.15s, box-shadow 0.2s;
+  box-shadow: 0 4px 24px rgba(229, 57, 53, 0.5);
+}
+
+.final-cta-btn:hover {
+  background-color: #c62828;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(229, 57, 53, 0.6);
+}
+
+.final-cta-btn:active {
+  transform: translateY(0);
+}
+
+.final-cta-badges {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.final-cta-badge {
+  border: 1.5px solid #c9a84c;
+  color: #c9a84c;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 8px 20px;
+  border-radius: 32px;
+}
+
+/* ─── Footer ─── */
+
+.site-footer {
+  background-color: #0a0a0a;
+  color: #888888;
+  text-align: center;
+  padding: 28px 24px;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+}
+
+@media (max-width: 480px) {
+  .final-cta-btn {
+    display: block;
+    padding: 20px 24px;
+  }
+
+  .final-cta-section {
+    padding: 72px 20px;
+  }
+}
