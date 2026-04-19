@@ -224,6 +224,73 @@ body {
   line-height: 1.8;
 }
 
+/* ─── Story Section ─── */
+
+.story-section {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  padding: 80px 24px;
+}
+
+.story-inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.story-heading {
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  margin-bottom: 48px;
+  text-align: center;
+  position: relative;
+  display: block;
+}
+
+.story-heading::after {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 3px;
+  background-color: #e53935;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+.story-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.story-image-placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background-color: #d9d9d9;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888888;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+}
+
+.story-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-left: 4px solid #c9a84c;
+  padding-left: 28px;
+}
+
+.story-text p {
+  font-size: clamp(0.9rem, 2vw, 1.05rem);
+  line-height: 2;
+  color: #333333;
+}
+
 /* ─── Responsive ─── */
 
 @media (max-width: 640px) {
@@ -240,6 +307,15 @@ body {
   }
 
   .product-section {
+    padding: 60px 20px;
+  }
+
+  .story-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .story-section {
     padding: 60px 20px;
   }
 }
