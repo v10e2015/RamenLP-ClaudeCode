@@ -264,17 +264,11 @@ body {
   align-items: center;
 }
 
-.story-image-placeholder {
+.story-owner-image {
   width: 100%;
-  aspect-ratio: 4 / 3;
-  background-color: #d9d9d9;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #888888;
-  font-size: 0.9rem;
-  letter-spacing: 0.08em;
+  aspect-ratio: 3 / 4;
+  border-radius: 12px;
+  object-fit: cover;
 }
 
 .story-text {
