@@ -184,16 +184,68 @@
     </div>
   </section>
 
-  <section class="final-cta-section" id="order">
+  <section class="final-cta-section">
     <div class="final-cta-inner">
       <h2 class="final-cta-heading">今すぐ魂龍の味を、おうちへ。</h2>
       <p class="final-cta-sub">豚骨ラーメンキット 4人前・冷凍&emsp;2,800円（送料込み）</p>
-      <a href="#" class="final-cta-btn">今すぐ注文する</a>
+      <a href="#order" class="final-cta-btn">今すぐ注文する</a>
       <ul class="final-cta-badges">
         <li class="final-cta-badge">送料無料</li>
         <li class="final-cta-badge">冷凍便でお届け</li>
         <li class="final-cta-badge">ギフト対応可</li>
       </ul>
+    </div>
+  </section>
+
+  <section class="order-section" id="order">
+    <div class="order-inner">
+      <h2 class="order-heading">ご注文はこちら</h2>
+      <form class="order-form" id="order-form" novalidate>
+
+        <div class="order-field">
+          <label class="order-label" for="order-name">お名前 <span class="order-required">必須</span></label>
+          <input type="text" id="order-name" name="name" class="order-input" required placeholder="山田 太郎">
+        </div>
+
+        <div class="order-field">
+          <label class="order-label" for="order-email">メールアドレス <span class="order-required">必須</span></label>
+          <input type="email" id="order-email" name="email" class="order-input" required placeholder="example@mail.com">
+        </div>
+
+        <div class="order-field">
+          <label class="order-label" for="order-tel">電話番号</label>
+          <input type="text" id="order-tel" name="tel" class="order-input" placeholder="090-0000-0000">
+        </div>
+
+        <div class="order-field">
+          <label class="order-label" for="order-address">お届け先住所 <span class="order-required">必須</span></label>
+          <textarea id="order-address" name="address" class="order-textarea" required placeholder="〒000-0000 都道府県市区町村番地"></textarea>
+        </div>
+
+        <div class="order-field">
+          <label class="order-label" for="order-quantity">数量</label>
+          <select id="order-quantity" name="quantity" class="order-select">
+            <option value="1">1セット</option>
+            <option value="2">2セット</option>
+            <option value="3">3セット以上</option>
+          </select>
+        </div>
+
+        <div class="order-field order-field--checkbox">
+          <label class="order-checkbox-label">
+            <input type="checkbox" id="order-gift" name="gift" class="order-checkbox">
+            ギフト包装を希望する
+          </label>
+        </div>
+
+        <div class="order-field">
+          <label class="order-label" for="order-notes">備考 <span class="order-optional">任意</span></label>
+          <textarea id="order-notes" name="notes" class="order-textarea" placeholder="ご要望などがあればご記入ください"></textarea>
+        </div>
+
+        <button type="submit" class="order-submit">注文を確定する</button>
+
+      </form>
     </div>
   </section>
 
